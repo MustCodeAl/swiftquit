@@ -75,7 +75,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func loadMenu(){
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         if let button = statusItem.button {
-            button.image = #imageLiteral(resourceName: "MenuIcon")
+            button.image = NSImage(named: "MenuIcon")
             button.image?.size = NSSize(width: 18.0, height: 18.0)
             button.image?.isTemplate = true
         }
